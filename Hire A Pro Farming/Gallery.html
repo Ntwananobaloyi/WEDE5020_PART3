@@ -1,0 +1,150 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta name= "charset" content ="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Gallery">
+<meta name="Author" content="Ntwanano Baloyi">
+<meta name="keywords" content="Hire, farming,"> 
+ 
+<title>Gallery</title>
+
+<link rel="stylesheet" href="css/gallery.css">
+
+</head>
+<body>
+<header>
+<nav class="navbar">
+
+<div class="logo"><img src="images/hire a pro.jpg" style="width:50px;height:90px;border-radius:50%;"/> 
+</div>
+    
+ 
+
+<!-- below is the navigation bar-->
+<ul class="nav-links">
+<li><a href="Home.html">Home Page</a></li>
+<li><a href="Products.html">Products</a></li>
+<li><a href="About.html">About Us</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+
+
+
+<!-- below are all  the pictures of all avativies we have in our farm-->
+<main>
+<div class="heading">
+<h1><u>Our Gallery Page</u></h1> <!-- this is the main heading-->
+</div>
+<div class="container">
+<div class="box" onclick="openLightbox('images/download.JPG','image 1')">
+<img src ="images/download.JPG" alt="image 1" style="width:300px; height:400px;"/>
+</div>  
+
+
+<div class="box" onclick="openLightbox('images/D.JPEG','image 2')">
+<img src ="images/G.JPEG" alt="image 2" style="width:300px; height:400px;"/>
+</div>
+
+
+<div class="box" onclick="openLightbox('images/Bb.JPEG','image 3')">
+<img src ="images/Bb.JPEG" alt="image 3" style="width:300px; height:400px;"/>
+</div>
+
+<div class="box" onclick="openLightBox('images/A.JPEG','image 4')">
+<img src = "images/A.JPEG" alt="image 4" style="width:300px; height:400px;"/>
+</div>
+
+
+</div> 
+<div class= "section">
+<div class="row" onclick="openLightbox('images/picture.JPG','image 5')">
+<img src = "images/picture.JPG" alt="image 5" style ="width:300px; height:400px;"/>
+</div>
+
+<div class="row" onclick="openLightbox('images/I.JPEG','image6')">
+<img src = "images/I.JPEG" alt="image 6" style ="width:300px; height:400px;"/>
+</div>
+
+<div class="row" onclick="openLightbox('images/hire a pro.JPG','image 7')">
+<img src = "images/hire a pro.JPG" alt="image 7" style ="width:300px; height:400px;"/>
+</div>
+
+<div class="row" onclick="openLightbox('images/chicken.JFIF','image 8')">
+<img src = "images/chicken.JFIF" alt="image 8" style ="width:300px; height:400px;"/>
+</div>  
+</div>
+ 
+<div class="Mass">
+<div class="line" onclick="openLightbox('images/Ff.JPEG','image 9')">
+<img src = "images/Ff.JPEG" alt="image 9" style = "width:300px; height:400px;"/>
+</div>
+
+<div class="line" onclick="openLightbox('images/cows.JFIF','image 10')">
+<img src = "images/cows.JFIF" alt="image 10" style ="width:300px; height:400px;"/>
+</div>
+
+<div class="line" onclick="openLightbox('images/Gg.JPEG','image 11')">
+<img src = "images/Gg.JPEG" alt= "image 11" style = "width:300px; height:400px;"/>
+</div>
+
+<div class="line" onclick="openLightbox('images/T.JPEG','image 12')">
+<img src=" images/T.JPEG" alt="image 12" style="width:300px; height:400px;"/>
+</div>
+</div> 
+
+<div class="contain">
+<div class="column" onclick="openLightbox(images/goats.JFIF','image 13')">
+<img src="images/goats.JFIF " alt="image 13" style="width:300px; height:400px;"/> 
+</div>
+
+<div class="column" onclick="openLightbox('images/Aa.JPEG','image 14')">
+<img src="images/Aa.JPEG" alt="image 14" style="width:300px; height:400px;"/> 
+</div>
+<div class="column" onclick="openLightbox('images/crops.JFIF','image 15')">
+<img src = "images/crops.JFIF" alt="image 15" style="width:300px; height:400px;"/>
+</div>
+<div class="column" onclick="openLightbox('images/header.JPEG','image 16')">
+<img src="images/header.JPEG" alt="image 16" style="width:300px; height:400px;"/>
+</div>
+</div>
+
+   <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-img" src="" alt="">
+
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+
+        </div>
+
+        <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+
+    </div>
+</main>
+
+<footer>
+ <p>&copy;Hire A Pro Farming. All Rights Reserved</p>
+ <p id="current-time"></p>
+ <script src="javascript/gallery.js"></script>
+ </footer>
+ </body>
+</html>
+
+
+
+
+
+
+
+

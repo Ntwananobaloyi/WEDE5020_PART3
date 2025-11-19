@@ -1,0 +1,160 @@
+/*Reset*/
+ *{
+	 margin:0;
+	 padding:0;
+	 box-sizing:border-box;
+ } 
+ body{
+	 font-size:14px;
+	
+ }
+    .navbar {
+	 background:#133020;
+	 backdrop-filter:blur(10px);
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+	  box-shadow:0 4px 10px rgba(0,0,0,0.1); 
+    }
+	   .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+	  margin-right:auto;
+    }
+	.navbar ul{
+	list-style:none;
+      display: flex;
+      gap: 1.5rem;
+    }
+	.navbar a{
+      color:#D4E451;
+      text-decoration: none;
+      font-weight:bold;
+	  transition:color 0.3d ease;
+	  
+    }
+	 .navbar a:hover {
+      color:#0CBC3E3;
+	  opacity:0.2;
+    } 
+
+ 
+ .container{
+	 width:80%;
+	 margin:50px auto;
+ }
+ .contact-box{
+	 background:#fff;
+	 display:flex;
+ }
+ .contact-left{
+	 flex-basis:60%;
+	 padding:40px 60px;
+ }
+ .contact-right{
+	 flex-basis:40%;
+	 padding:40px;
+	 background:#1c00b5;
+	 color:#fff;
+ }
+ h2{
+	 margin-bottom:10px;
+ }
+ .container p{
+	 margin-bottom:10px;
+ }
+ .input-row{
+	 display:flex;
+	 justify-content: space-between;
+	 margin-bottom:20px;
+ }
+ .input-row.input-group{
+	 flex-basis:45%;
+ }
+ input{
+	 width:100%;
+	 border:none;
+	 border-bottom:1px solid #ccc;
+	 outline:none;
+	 padding-bottom:5px;
+ }
+ textarea{
+	 width:100%;
+	 border:1px solid #ccc;
+	 outline:none;
+	 padding:10px;
+	 box-sizing:border-box;
+ }
+ label{
+	 margin-bottom:6px;
+	 display:block;
+	 color:#1c00b5;
+ }
+ button{
+	 background:#1c00b5;
+	 width:100px;
+	 border:none;
+	 outline:none;
+	 color:#fff;
+	 height:35px;
+	 border-radius:30px;
+	 margin-top:20px;
+	 box-shadow:0px 5px 15px 0px rgba(28,0,181,0.30);
+ }
+ .contact-left h3{
+	 color:#1c00b5;
+	 font-weight:600;
+	 margin-bottom:30px;
+ }
+ .contact-right h3{
+	 font-weight:600;
+	 margin-bottom:30px;
+ }
+ tr td: first-child{
+	 padding-right:20px;
+ }
+ tr td {
+	 padding-top:20px;
+ }
+ .frame{
+	 margin:0px;
+	 align-items:center;
+	 border:1px solid #ccc;
+	 border-radius:20px;.
+ }
+ .copyright p{
+	 text-align:center;
+		font-size:15px;
+		font-family:sans-serif;
+		font-weight:bold;
+	}
+	
+	
+ @media(max-width:768px){
+	
+	  .contact-box{
+		 display:column;
+		 flex-direction:column;
+ }
+ .container{
+	     text-align: center;
+	     align-items:center;
+		 display:column;
+		 flex-direction:column;
+ } 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	 

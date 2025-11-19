@@ -1,0 +1,156 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta name= "charset" content ="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Contact">
+<meta name="Author" content="Ntwanano Baloyi">
+<meta name="keywords" content="Name,message,PHONE"> 
+
+<title>Contact Us</title> <!--this is the head section of this html document-->
+
+<link rel="stylesheet"  href="css/contact.css">
+
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo"><img src="images/hire a pro.jpg" style="width:50px;height:90px;border-radius:50%;"/>
+</div>
+<div class="menu-toggle" id="menuToggle">☰</div>
+
+
+<ul class="nav-links" id="navLinks">
+</li><a href="home.html">Home Page</a></li>
+</li><a href="products.html">Products</a></li>
+</li><a href="About.html">About Us</a></li>
+</li><a href="Gallery.html">Gallery</a></li>
+</li><a href="Contact.html">Contact Us</a></li>
+</ul>
+ </nav>
+</header>
+<main>
+<div class="container">
+<h2>Contact Us</h2><!-- this is the second heading-->
+
+<p>  Get in Touch and Ask how can we help you</p>
+
+<div class="contact-box">
+<div class="contact-left">
+<h3>Send your request</h3>
+
+<form id="Enquiry form">
+
+<div class="input-row">
+<div class="input-group">
+<label>Name</label>
+<input type="text" id="name" name="name" required minlength="2" placeholder="name">
+<div class="error" id="nameError"></div>
+</div>
+
+
+<div class="input-group">
+<label>PHONE</label>
+<input type="phone" id="phone" name="phone"  required minlength="10" placeholder="0123456789">
+<div class="error" id="phoneError"></div>
+</div>
+</div> 
+
+<div class="input-row">
+<div class ="input-group">
+<label>EMAIL</label>
+<input type="email" id="email" name="email"required  placeholder="name123@gmail.com">
+<div class="error" id="emailError"></div>
+</div>
+<div class="input-group">
+<label>Subject</label>
+<input type="text" id="subject" name="subject" required minlength="10" placeholder="product demo">
+<div class="error" id="subjectError"></div>
+</div>
+</div>
+
+<label>Message</label>
+<textarea rows="5" id="message" name="message" required minlength="2" placeholder="Message"></textarea>
+<div class="error" id="messageError"></div>
+<button type="submit">SEND</button>
+</form>
+</div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "f1TyzjlGtb-29o_9d",
+      });
+   })();
+</script>
+
+<div class="contact-right">
+<h3>Reach Us</h3>
+
+<table>
+<tr>
+<td>Email</td>
+<td>INFO@HIREAPRO.CO.ZA	</td>
+</tr>
+<tr>
+<td>Call Us</td>
+<td>+27 61 490 2044</td>
+</tr>
+ 
+<tr>  
+<td>Address</td>
+<td> Ka Mzilela 0826 Giyani Limpopo</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+</main>
+<footer>
+<br/>
+<!-- below is our location-->
+<div class="frame">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14624.738578588407!2d30.80645144618045!3d-23.59771002386894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec463683eba17db%3A0x76b4ebb333a79deb!2sKa-Mzilela%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1756234173179!5m2!1sen!2sie" width="1440" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="copyright">
+<p>&copy;Hire A Pro Farming.All Rights Reserved</p>
+<p id="current-time"></p>
+<script src="javascript/contact.js"></script>
+</div>
+</footer>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   

@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta name= "charset" content ="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Products">
+<meta name="Author" content="Ntwanano Baloyi">
+<meta name="keywords" content="selection, fresh,"> 
+<title> Products & Services</title> <!-- this is the head section of this html document-->
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo"><img src="images/hire a pro.jpg" style="width:50px;height:90px;border-radius:50%;"/> 
+</div>
+
+
+<!-- below is the navigation bar-->
+ 
+ <ul class="nav-links"> 
+<li><a href = "Home.html">Home Page</a></li>
+<li><a href = "Products.html">Products</a></li>
+<li><a href = "About.html">About Us</a></li>
+<li><a href = "Gallery.html">Gallery</a></li>
+<li><a href = "Contact.html">Contact us</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+
+<main>
+<div class="heading">
+
+<h1> Explore and discover our wide-range of selection Products</h1><!-- this is the main heading-->
+<!-- below is the paragraph-->
+<p>Our Farm offers a wide-range of high-quality products at an affordable</p>
+<p>Price, here are some products you can choose from</p>
+</div>
+<!-- below are all the products we have to offer at our farm-->
+<div class="container">
+<div class="box" onclick="openLightbox('images/chicken.JFIF','Fresh Poultry available')">
+<img src= "images/chicken.JFIF" alt="Fresh Poultry available" style= "width:300ox; height:400px;"/>
+<h4> fresh poultry available</h4>
+</div>
+<div class="box" onclick="openLightbox('images/organic.JPEG','Organic Vegetables')">
+<img src="images/organic.JPEG" alt="Organic Vegetables" style="width:300px; height:400px;"/>
+<h4> Organic vegetables</h4>
+</div>
+
+<div class="box" onclick="openLightbox('images/eggs.JPEG','fresh eggs')">
+<img src="images/eggs.JPEG" alt="fresh eggs" style="width:300px; height:400px;"/>
+<h4>fresh eggs</h4>
+</div>
+<div class="box" onclick="openLightbox('images/milk.JPEG','Dairy products')">
+<img src="images/milk.JPEG" alt="Dairy products" style="width:300px; height:400px;"/>
+<h4> Dairy products</h4>
+</div>
+</div>
+
+<div class="section">
+<div class="row" onclick="openLightbox('images/cows.JFIF','fresh cows for sale')">
+<img src = "images/cows.JFIF" alt="fresh cows for sale" style = "width:300px; height:400px;"/>
+<h4> fresh Cows for sale  </h4>
+</div>
+<div class="row" onclick="openLightbox('images/A.JPEG','Livestock sheep for sale')">
+<img src = "images/A.JPEG" alt="Livestock for sale"style ="width:300px;height:400px;"/>
+<h4> Livestock Sheep for sale </h4>
+</div>
+<div class="row" onclick="openLightbox('images/crops.JFIF','Fresh Crops for maize and corn production')">
+<img src = "images/crops.JFIF"  alt="fresh Crops fpr maize and corn production" style = "width:300px; height:400px;"/>
+<h4> Fresh Crops for maize and corn production </h4>
+</div>
+<div class="row" onclick="openLightbox('images/goats.JFIF','Discover the richness of goats products')">
+<img src = "images/goats.JFIF" alt="Discover the richness of goats products" style = "width:300px; height:400px;"/>
+<h4>Discover the richness of goats products</h4>
+</div>
+</div>
+
+<!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+
+    <div class="lightbox-content">
+
+    <img id="lightbox-img" src="" alt="">
+
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+
+    </div>
+
+     <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+
+    </div>
+	
+</main>
+<footer>
+<br/>
+<p>&copy;Hire A Pro Farming. All Rights Reserved</p>
+<p id="current-time"></p>
+<script src="javascript/products.js"></script>
+</footer>
+
+</body>
+ 
+
+</html>
